@@ -1,19 +1,19 @@
-# react-native-exit-app
-Exit / Close / Kill / shutdown your react native app. Does not invoke a crash notification.
+# react-native-kill-app
+Exit / Close / Kill / shutdown your react native app. Does not invoke a **crash** notification.
 
 NOTICE:
-- for React Native < 0.47 use react-native-exit-app <1.x.x
-- for React Native > 0.47 use react-native-exit-app >=1.x.x
+- for React Native > 0.47 use react-native-kill-app >=1.x.x
+- for React Native < 0.47 use react-native-kill-app <1.x.x
 
 ## Setup
 
 Fast and easy:
 ```bash
-npm install react-native-exit-app --save
-react-native link react-native-exit-app
+yarn add react-native-kill-app
+react-native link react-native-kill-app
 ```
 
-Or manual: add the latest version as dependeny to your package.json.
+Or manual: add the latest version as dependency to your package.json.
 
 ```javascript
 {
@@ -22,7 +22,7 @@ Or manual: add the latest version as dependeny to your package.json.
   },
   "dependencies": {
     ...
-    "react-native-exit-app": "0.1.0",
+    "react-native-kill-app": "0.1.0",
     ...
   }
 ```
@@ -35,12 +35,12 @@ Or manual: add the latest version as dependeny to your package.json.
 #### Android
 * In the settings.gradle
   ```
-    include ':react-native-exit-app', ':app'
-    project(':react-native-exit-app').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-exit-app/android')
+    include ':react-native-kill-app', ':app'
+    project(':react-native-kill-app').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-kill-app/android')
   ```
 * In the build.gradle
   ```
-    compile project(':react-native-exit-app')
+    compile project(':react-native-kill-app')
   ```
 * In MainApplication.java
   ```
@@ -59,13 +59,12 @@ Or manual: add the latest version as dependeny to your package.json.
 ## Usage
 
 ```javascript
-import RNExitApp from 'react-native-exit-app';
+import RNExitApp from 'react-native-kill-app';
 ...
 RNExitApp.exitApp();
 ...
 ```
 
-## Versioning
+## Thanks
 
-This project uses semantic versioning: MAJOR.MINOR.PATCH.
-This means that releases within the same MAJOR version are always backwards compatible. For more info see [semver.org](http://semver.org/).
+https://github.com/wumke/react-native-exit-app
