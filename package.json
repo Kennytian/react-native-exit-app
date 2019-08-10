@@ -1,6 +1,6 @@
 {
   "name": "react-native-kill-app",
-  "version": "1.0.2",
+  "version": "1.0.4",
   "description": "Exit,close,kill,shutdown app completely for React Native on iOS and Android.",
   "main": "index.js",
   "scripts": {
